@@ -12,8 +12,8 @@ export default class ChatsCtrl extends Controller {
         this.data = [
             {
                 _id: 0,
-                name: 'Ethan Gonzalez',
-                picture: 'https://randomuser.me/api/portraits/thumb/men/1.jpg',
+                name: 'Sally Rally',
+                picture: 'https://randomuser.me/api/portraits/thumb/women/2.jpg',
                 lastMessage: {
                     text: 'You on your way?',
                     timestamp: Moment().subtract(1, 'hours').toDate()
@@ -21,7 +21,7 @@ export default class ChatsCtrl extends Controller {
             },
             {
                 _id: 1,
-                name: 'Bryan Wallace',
+                name: 'Mr Lego',
                 picture: 'https://randomuser.me/api/portraits/thumb/lego/1.jpg',
                 lastMessage: {
                     text: 'Hey, it\'s me',
@@ -40,7 +40,7 @@ export default class ChatsCtrl extends Controller {
             {
                 _id: 3,
                 name: 'Katie Peterson',
-                picture: 'https://randomuser.me/api/portraits/thumb/women/2.jpg',
+                picture: 'https://randomuser.me/api/portraits/thumb/women/3.jpg',
                 lastMessage: {
                     text: 'Look at my mukluks!',
                     timestamp: Moment().subtract(4, 'days').toDate()
@@ -49,7 +49,7 @@ export default class ChatsCtrl extends Controller {
             {
                 _id: 4,
                 name: 'Ray Edwards',
-                picture: 'https://randomuser.me/api/portraits/thumb/men/2.jpg',
+                picture: 'https://randomuser.me/api/portraits/thumb/men/7.jpg',
                 lastMessage: {
                     text: 'This is wicked good ice cream.',
                     timestamp: Moment().subtract(2, 'weeks').toDate()

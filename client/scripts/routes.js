@@ -17,15 +17,15 @@ export default class RoutesConfig extends Config {
                     }
                 }
             })
-            .state('tab.chat', {
-                url: '/chats/:chatId',
-                views: {
-                    'tab-chats': {
-                        templateUrl: 'client/templates/chat.html',
-                        controller: 'ChatCtrl as chat'
-                    }
-                }
-            });
+            //.state('tab.chat', {
+            //    url: '/chats/:chatId',
+            //    views: {
+            //        'tab-chats': {
+            //            templateUrl: 'client/templates/chat.html',
+            //            controller: 'ChatCtrl as chat'
+            //        }
+            //    }
+            //});
 
         this.$urlRouterProvider.otherwise('tab/chats');
     }
