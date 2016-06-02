@@ -12,6 +12,7 @@ import { Meteor } from 'meteor/meteor';
 
 // Modules
 import RoutesConfig from '../routes';
+import ChatsCtrl from '../controllers/chats.controller';
 
 const App = 'Whatsapp';
 
@@ -23,7 +24,8 @@ Angular.module(App, [
 
 
 new Loader(App)
-    .load(RoutesConfig);
+    .load(ChatsCtrl)
+    .load(RoutesConfig)
 
 // Startup
 if (Meteor.isCordova) {
