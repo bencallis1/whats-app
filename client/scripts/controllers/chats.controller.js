@@ -1,7 +1,7 @@
 /**
  * Created by Ben on 6/2/16.
  */
-import Moment from 'momemt';
+import Moment from 'moment';
 
 import { Controller } from 'angular-ecmascript/module-helpers';
 
@@ -56,5 +56,8 @@ export default class ChatsCtrl extends Controller {
                 }
             }
         ];
+    }
+    remove(chat) {
+        this.data.splice(this.data.indexOf(chat),1);
     }
 }

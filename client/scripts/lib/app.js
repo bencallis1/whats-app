@@ -10,7 +10,8 @@ import Angular from 'angular';
 import Loader from 'angular-ecmascript/module-loader';
 import { Meteor } from 'meteor/meteor';
 
-// Modules
+// This is where we load our modules
+import CalendarFilter from '../filters/calendar.filter';
 import RoutesConfig from '../routes';
 import ChatsCtrl from '../controllers/chats.controller';
 
@@ -25,7 +26,8 @@ Angular.module(App, [
 
 new Loader(App)
     .load(ChatsCtrl)
-    .load(RoutesConfig)
+    .load(CalendarFilter)
+    .load(RoutesConfig);
 
 // Startup
 if (Meteor.isCordova) {

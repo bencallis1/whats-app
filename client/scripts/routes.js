@@ -1,6 +1,3 @@
-/**
- * Created by Ben on 6/2/16.
- */
 import { Config } from 'angular-ecmascript/module-helpers';
 
 export default class RoutesConfig extends Config {
@@ -15,7 +12,17 @@ export default class RoutesConfig extends Config {
                 url: '/chats',
                 views: {
                     'tab-chats': {
-                        templateUrl: 'client/templates/chats.html'
+                        templateUrl: 'client/templates/chats.html',
+                        controller: 'ChatsCtrl as chats'
+                    }
+                }
+            })
+            .state('tab.chat', {
+                url: '/chats/:chatId',
+                views: {
+                    'tab-chats': {
+                        templateUrl: 'client/templates/chat.html',
+                        controller: 'ChatCtrl as chat'
                     }
                 }
             });
